@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 570px;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 17px;
+    border-radius: 9px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 360px;
+}
+
+.login-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 17.5px;
+}
+
+.login-btn {
+    padding: 15px;
+    border: none;
+    background-color: #0866ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-btn:hover {
+    background-color: #165cdb;
+}
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    color:#a1a1a1;
+}
+
+.forgot-link {
+    text-align: center;
+    color: #0866ff;
+    font-size: 14.75px;
+    text-decoration: none;
+}
+.lower-text {
+    text-align: center;
+    font-size: 14.75px;
+    position: absolute;
+    padding-top: 130px;
+    padding-left: 580px;
+    white-space: nowrap;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.create-box {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 800px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+}
+
+.signup-btn {
+    padding: 15px;
+    border: none;
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.signup-btn:hover {
+    background-color: #36a420;
+}
+
+
+/* infobox styles */
+
+.info-box {
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    padding-right: 780px;
+    padding-bottom: 390px;
+}
+
+.company-name {
+    width: 50px;
+    height: auto;
+}
+
+.image-face {
+    width: 280px;
+    height: auto;
+}
+.company-quote {
+    font-size: 28px;
+    color: #333;
+    line-height: 1.4;
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+
+/* footer */
+.fb-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    font-size: 12px;
+    color: #737373;
+}
+
+.footer-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.footer-langs,
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-langs a,
+.footer-links a{
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-langs a:hover,
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.lang-more{
+    border: 1px solid #ccd0d5;
+    background: #f5f6f7;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.fb-footer hr{
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.footer-copy{
+    margin-top: 10px;
+}
+
+
+
+
