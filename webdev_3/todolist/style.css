@@ -1,0 +1,127 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.04em;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.main-card {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+}
+
+.input-box {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 43px;
+}
+
+input {
+    background-color: #282828;
+    border: none;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button#addBtn {
+    background-color: #1DB954;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #282828;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: white;
+}
+
+.delete-btn{
+    font-size: 12px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 4px ;
+}
+
+span {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 0;
+}
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b3b3b3;
+    border-radius: 20%;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+input[type="checkbox"]:checked::after {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    left: 3px;
+    top: -1px;
+}
+
+span {
+
+    align-items: center; 
+}
