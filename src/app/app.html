@@ -1,0 +1,82 @@
+<div class="kaspi">
+
+  <header class="topbar">
+    <div class="top-inner">
+      <div class="logo">
+        <img src="assets/images/kaspi.png" class="pic_logo" alt="Kaspi">
+        <span>Kaspi.kz</span>
+      </div>
+
+      <nav class="top-links">
+        <a href="#">Клиентам</a>
+        <a href="#">Бизнесу</a>
+        <a href="#">Kaspi Гид</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="searchbar">
+    <div class="search-inner">
+      <button class="tab active">Магазин</button>
+
+      <div class="search">
+        <input [(ngModel)]="query" placeholder="Поиск товара" />
+        <button class="search-btn"></button>
+      </div>
+
+      <div class="city">
+        <div class="city-label">Мой город:</div>
+        <a class="city-link" href="#">Алматы</a>
+      </div>
+
+      <button type="button" (click)="toggleLikedOnly()" class="cat">
+        {{ showLikedOnly() ? 'Показать все' : 'Понравившиеся' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="cats">
+    <div class="cats-inner">
+      <button
+        class="cat"
+        *ngFor="let c of categories"
+        (click)="selectCategory(c.id)"
+        [class.active]="c.id === selectedCategoryId()"
+        type="button"
+      >
+        {{ c.name }}
+      </button>
+    </div>
+  </div>
+
+  <div class="crumbs">
+    <div class="crumbs-inner">
+      <a href="#">Kaspi Магазин</a> <span>→</span>
+      <span class="muted" *ngIf="selectedCategoryId() === null">Выберите категорию</span>
+      <span class="muted" *ngIf="selectedCategoryId() !== null">Товары</span>
+    </div>
+  </div>
+
+  <div class="main">
+    <aside class="left">
+      <div class="block">
+        <div class="block-title">Категории</div>
+        <div class="tree">
+          <div class="tree-item" *ngFor="let c of categories">
+            {{ c.name }}
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="right">
+      <ng-container *ngIf="selectedCategoryId() !== null; else pick">
+        <app-product-list [products]="selectedProducts()"></app-product-list>
+      </ng-container>
+
+      <ng-template #pick>
+        <div style="padding: 16px;">Выбери категорию сверху</div>
+      </ng-template>
+    </section>
+  </div>
+</div>

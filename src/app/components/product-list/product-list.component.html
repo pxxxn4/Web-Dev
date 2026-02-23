@@ -1,0 +1,11 @@
+<div class="grid">
+  <app-product-item
+    *ngFor="let p of products"
+    [product]="p"
+    (delete)="onDelete($event)"
+  ></app-product-item>
+</div>
+
+<div *ngIf="products.length === 0" style="padding:16px;">
+  No products in this category
+</div>
